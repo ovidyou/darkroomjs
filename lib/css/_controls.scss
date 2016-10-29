@@ -1,0 +1,24 @@
+.darkroom-controls-container {
+  min-height: 60px;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.darkroom-control-hidden {
+  display: none !important;
+}
+
+.darkroom-control-group * {
+  vertical-align: middle;
+}
+
+.darkroom-control-label,
+.darkroom-control-element {
+  margin: 0 5px 0 0;
+  display: inline-block;
+}
+
+.darkroom-control-element {
+  margin-right: 10px;
+}

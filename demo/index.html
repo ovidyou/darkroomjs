@@ -131,7 +131,10 @@
     </div>
   </div>
 
+  <script src="./vendor/jquery.js"></script>
   <script src="./vendor/fabric.js"></script>
+  <script src="./vendor/arrow.fabric.js"></script>
+  <script src="./vendor/fontdetect.js"></script>
   <script src="./build/darkroom.js"></script>
 
   <script>
@@ -147,30 +150,17 @@
       // Plugins options
       plugins: {
         //save: false,
-        crop: {
-          quickCropKey: 67, //key "c"
-          //minHeight: 50,
-          //minWidth: 50,
-          //ratio: 4/3
-        }
+        //crop: false,
       },
 
       // Post initialize script
       initialize: function() {
-        var cropPlugin = this.plugins['crop'];
+       // var cropPlugin = this.plugins['crop'];
         // cropPlugin.selectZone(170, 25, 300, 300);
-        cropPlugin.requireFocus();
+       // cropPlugin.requireFocus();
       }
     });
-  </script>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-23657373-2', 'mattketmo.github.io');
-    ga('send', 'pageview');
+    window.imageEditor = dkrm;
   </script>
 </body>
 </html>
